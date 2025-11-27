@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About me - My background, skills, and learning goals">
+    <title>Learning Journal | About Me</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <meta name="theme-color" content="#00c6ff">
+    <link rel="manifest" href="{{ url_for('static', filename='manifest.json') }}">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="navbar">
+        <nav class="container nav-container">
+            <div class="logo" data-aos="fade-right">
+                <span class="logo-icon">📚</span>
+                <span class="logo-text">My Journal</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="{{ url_for('index') }}" class="nav-link">Home</a></li>
+                <li><a href="{{ url_for('journal') }}" class="nav-link">Journal</a></li>
+                <li><a href="{{ url_for('projects') }}" class="nav-link">Projects</a></li>
+                <li><a href="{{ url_for('about') }}" class="nav-link active">About</a></li>
+            </ul>
+            <button class="mobile-toggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title" data-aos="fade-up">About Me</h1>
+            <p class="page-subtitle" data-aos="fade-up" data-aos-delay="100">
+                My journey into web development
+            </p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <main>
+        <section class="about-intro-section">
+            <div class="container">
+                <div class="about-intro-grid">
+                    <div class="about-image-wrapper" data-aos="fade-right">
+                        <div class="about-image-container">
+                            <img src="{{ url_for('static', filename='images/profile.jpeg') }}" alt="Profile" class="about-image">
+                            <div class="about-image-glow"></div>
+                        </div>
+                    </div>
+                    <div class="about-content" data-aos="fade-left">
+                        <h2 class="about-heading">Hi, I'm <span class="highlight">Mohammad Sarif Khan</span></h2>
+                        <p class="about-text">
+                            I'm a passionate learner on a journey to become a proficient web developer. 
+                            My fascination with technology started early, but it wasn't until recently that 
+                            I decided to dive deep into web development and turn this passion into a career.
+                        </p>
+                        <p class="about-text">
+                            I believe in learning by doing, which is why I created this learning journal to 
+                            document my progress, share my insights, and showcase the projects I build along 
+                            the way. Every line of code I write brings me closer to my goal of creating 
+                            meaningful digital experiences.
+                        </p>
+                        <p class="about-text">
+                            When I'm not coding, you can find me reading tech blogs, experimenting with new 
+                            frameworks, or contributing to open-source projects. I'm always excited to connect 
+                            with fellow developers and learn from the community.
+                        </p>
+                        <div class="about-cta">
+                            <a href="{{ url_for('projects') }}" class="btn btn-primary">View My Work</a>
+                            <a href="{{ url_for('journal') }}" class="btn btn-secondary">Read My Journal</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills-section">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Technical Skills</h2>
+                <p class="section-subtitle" data-aos="fade-up">Technologies I'm learning and working with</p>
+                
+                <div class="skills-grid">
+                    <!-- HTML -->
+                    <div class="skill-item" data-aos="fade-up">
+                        <div class="skill-header">
+                            <span class="skill-name">HTML5</span>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+
+                    <!-- CSS -->
+                    <div class="skill-item" data-aos="fade-up" data-aos-delay="50">
+                        <div class="skill-header">
+                            <span class="skill-name">CSS3 / Sass</span>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+
+                    <!-- JavaScript -->
+                    <div class="skill-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="skill-header">
+                            <span class="skill-name">JavaScript</span>
+                            <span class="skill-percentage">75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+
+                    <!-- React -->
+                    <div class="skill-item" data-aos="fade-up" data-aos-delay="150">
+                        <div class="skill-header">
+                            <span class="skill-name">React</span>
+                            <span class="skill-percentage">60%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 60%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Git -->
+                    <div class="skill-item" data-aos="fade-up">
+                        <div class="skill-header">
+                            <span class="skill-name">Git & GitHub</span>
+                            <span class="skill-percentage">70%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 70%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Responsive Design -->
+                    <div class="skill-item" data-aos="fade-up" data-aos-delay="50">
+                        <div class="skill-header">
+                            <span class="skill-name">Responsive Design</span>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Node.js -->
+                    <div class="skill-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="skill-header">
+                            <span class="skill-name">Node.js</span>
+                            <span class="skill-percentage">55%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 55%"></div>
+                        </div>
+                    </div>
+
+                    <!-- UI/UX Design -->
+                    <div class="skill-item" data-aos="fade-up" data-aos-delay="150">
+                        <div class="skill-header">
+                            <span class="skill-name">UI/UX Design</span>
+                            <span class="skill-percentage">65%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 65%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Learning Goals Section -->
+        <section class="goals-section">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">My Learning Goals</h2>
+                <p class="section-subtitle" data-aos="fade-up">What I'm working towards this semester</p>
+                
+                <div class="goals-grid">
+                    <!-- Goal 1 -->
+                    <article class="goal-card" data-aos="fade-up">
+                        <div class="goal-icon">🎯</div>
+                        <h3 class="goal-title">Master Modern JavaScript</h3>
+                        <p class="goal-description">
+                            Deepen my understanding of ES6+ features, asynchronous programming, and modern 
+                            JavaScript patterns. Build complex applications using vanilla JavaScript before 
+                            moving to frameworks.
+                        </p>
+                        <div class="goal-status">
+                            <span class="status-label">Progress:</span>
+                            <div class="status-bar">
+                                <div class="status-fill" style="width: 70%"></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Goal 2 -->
+                    <article class="goal-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="goal-icon">⚛️</div>
+                        <h3 class="goal-title">Learn React & State Management</h3>
+                        <p class="goal-description">
+                            Build proficiency in React including hooks, context API, and state management. 
+                            Create at least 3 substantial React applications demonstrating different concepts 
+                            and patterns.
+                        </p>
+                        <div class="goal-status">
+                            <span class="status-label">Progress:</span>
+                            <div class="status-bar">
+                                <div class="status-fill" style="width: 50%"></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Goal 3 -->
+                    <article class="goal-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="goal-icon">🎨</div>
+                        <h3 class="goal-title">Enhance Design Skills</h3>
+                        <p class="goal-description">
+                            Improve my UI/UX design abilities by studying design principles, color theory, 
+                            and typography. Create visually appealing and user-friendly interfaces that 
+                            provide excellent user experiences.
+                        </p>
+                        <div class="goal-status">
+                            <span class="status-label">Progress:</span>
+                            <div class="status-bar">
+                                <div class="status-fill" style="width: 60%"></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Goal 4 -->
+                    <article class="goal-card" data-aos="fade-up">
+                        <div class="goal-icon">🚀</div>
+                        <h3 class="goal-title">Build a Full-Stack Application</h3>
+                        <p class="goal-description">
+                            Learn backend development with Node.js and Express. Understand databases, APIs, 
+                            and authentication. Build and deploy a complete full-stack application from 
+                            scratch to production.
+                        </p>
+                        <div class="goal-status">
+                            <span class="status-label">Progress:</span>
+                            <div class="status-bar">
+                                <div class="status-fill" style="width: 35%"></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Goal 5 -->
+                    <article class="goal-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="goal-icon">🤝</div>
+                        <h3 class="goal-title">Contribute to Open Source</h3>
+                        <p class="goal-description">
+                            Start contributing to open-source projects to gain real-world experience, learn 
+                            from experienced developers, and give back to the community that has taught me 
+                            so much.
+                        </p>
+                        <div class="goal-status">
+                            <span class="status-label">Progress:</span>
+                            <div class="status-bar">
+                                <div class="status-fill" style="width: 25%"></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Goal 6 -->
+                    <article class="goal-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="goal-icon">📱</div>
+                        <h3 class="goal-title">Master Responsive Design</h3>
+                        <p class="goal-description">
+                            Become proficient in creating pixel-perfect responsive designs that work 
+                            seamlessly across all devices. Learn progressive web app (PWA) development 
+                            and mobile-first design principles.
+                        </p>
+                        <div class="goal-status">
+                            <span class="status-label">Progress:</span>
+                            <div class="status-bar">
+                                <div class="status-fill" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Additional Info Section -->
+        <section class="info-section">
+            <div class="container">
+                <div class="info-grid">
+                    <div class="info-card" data-aos="fade-up">
+                        <h3 class="info-title">🎓 Education</h3>
+                        <p class="info-text">
+                            Currently pursuing web development through online courses, bootcamps, and 
+                            self-directed learning. Focused on building practical skills through 
+                            hands-on projects.
+                        </p>
+                    </div>
+                    <div class="info-card" data-aos="fade-up" data-aos-delay="100">
+                        <h3 class="info-title">💼 Experience</h3>
+                        <p class="info-text">
+                            Building a portfolio of personal projects and freelance work. Actively 
+                            learning modern web technologies and best practices to prepare for a 
+                            career in web development.
+                        </p>
+                    </div>
+                    <div class="info-card" data-aos="fade-up" data-aos-delay="200">
+                        <h3 class="info-title">🌟 Interests</h3>
+                        <p class="info-text">
+                            Passionate about clean code, user experience design, web accessibility, 
+                            and staying up-to-date with the latest web technologies and industry trends.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-content">
+                <p class="footer-text">&copy; 2025 Learning Journal. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="GitHub">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/Sarifkhan1" class="social-link" aria-label="LinkedIn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/sarifkhan-mohammad-378442395/" class="social-link" aria-label="Twitter">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" aria-label="Scroll to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 15l-6-6-6 6"/>
+        </svg>
+    </button>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

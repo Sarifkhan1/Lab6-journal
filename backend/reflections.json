@@ -1,0 +1,30 @@
+[
+  {
+    "id": "1764271885296",
+    "title": "Flask As Backend",
+    "content": "In this week I have learned implementation of flask as backend to store update fetch search and filter journal entry from reflections.json as flask as backend",
+    "date": "2025-11-27",
+    "timestamp": 1764271885290,
+    "location": {
+      "city": "Lalitpur",
+      "state": "Bagamati Province",
+      "country": "Nepal",
+      "lat": 27.665431270028364,
+      "lon": 85.33280575442093
+    }
+  },
+  {
+    "id": "1764064350164",
+    "title": "Python JSON Implementations",
+    "content": "We have implemented reflections.json to store the journal entry and fetech journal entry in journal cards from reflections.json",
+    "date": "2025-11-25",
+    "timestamp": 1764271812985,
+    "location": {
+      "city": "Unknown",
+      "state": "",
+      "country": "Unknown",
+      "lat": null,
+      "lon": null
+    }
+  }
+]
